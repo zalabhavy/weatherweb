@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url('weather-images.jpg') center/cover no-repeat; 
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px;
+    font-size: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for search */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#search {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+}
+
+#search:hover {
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9);
+}
+
+#output {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: white; 
+}
